@@ -8,6 +8,8 @@ public class HelloWorld {
 
         System.out.println("Hello World!");
         System.out.println("Hello World!");
+        System.out.println("Lesson one");
+
 
         Cat cat = new Cat();
         System.out.println(cat);
