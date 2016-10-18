@@ -6,9 +6,11 @@ package Project;
 public class Cat {
     int eyes = 2;
 
-    int run() {
-        return 10;
+    public int getEyes() {
+        return eyes;
+    }
 
-
+    public void setEyes(int eyes) {
+        this.eyes = eyes;
     }
 }
