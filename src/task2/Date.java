@@ -1,6 +1,5 @@
-package lesson1_2;
+package task2;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -25,16 +24,16 @@ public class Date
     {
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat date = new SimpleDateFormat("dd MMMM yyyy");
-        String t1 = date.format(cal.getTime());
-        return (t1);
+        String a1 = date.format(cal.getTime());
+        return (a1);
 
     }
     private static String getTime()
     {
         Calendar cal = Calendar.getInstance();
         SimpleDateFormat time = new SimpleDateFormat("HH:mm");
-        String t2 = time.format(cal.getTime());
-        return t2;
+        String a2 = time.format(cal.getTime());
+        return a2;
     }
 
 }

@@ -1,4 +1,4 @@
-package lesson1_6;
+package task6;
 
 /**
  * Created by StudentTC on 18.10.2016.
