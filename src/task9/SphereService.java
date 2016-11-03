@@ -10,9 +10,21 @@ import java.util.Comparator;
 /**
  * Created by Dibox on 02.11.2016.
  */
-class SphereService implements Comparator<Sphere> {
 
-    @Override
+
+class SortByColor implements Comparator<Sphere> {
+
+        public int compare(Sphere sphere1, Sphere sphere2) {
+
+            String a1 = sphere1.getColor();
+            String a2 = sphere2.getColor();
+
+            return a1.compareTo(a2);
+        }
+    }
+
+class SortBySize implements Comparator<Sphere> {
+
     public int compare(Sphere sphere1, Sphere sphere2) {
         int sphere1Size = sphere1.getSize();
         int sphere2Size = sphere2.getSize();
@@ -26,4 +38,8 @@ class SphereService implements Comparator<Sphere> {
         }
     }
 }
+
+
+
+
 

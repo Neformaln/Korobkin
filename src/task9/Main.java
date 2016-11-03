@@ -1,6 +1,7 @@
 package task9;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 
 /**
@@ -8,20 +9,42 @@ import java.util.Collections;
  */
 public class Main {
     public static void main(String[] args) {
-        Sphere sphere1 = new Sphere(17, "green");
-        Sphere sphere2 = new Sphere(60, "yellow");
-        Sphere sphere3 = new Sphere(42, "red");
 
-        ArrayList<Sphere> al = new ArrayList<Sphere>();
-        al.add(sphere1);
-        al.add(sphere2);
-        al.add(sphere3);
+        Sphere[] s = new Sphere[3];
 
-        Collections.sort(al, new SizeComparator());
-        for (Sphere a : al) {
-            System.out.println(a.getColor());
+        s[0] = new Sphere(17, "green");
+        s[1] = new Sphere(60, "yellow");
+        s[2] = new Sphere(42, "red");
+
+
+        System.out.println("============ no sorted ==============");
+
+        for (Sphere i : s) {
+            System.out.println("Color: " + i.getColor() +
+                    " color: " + i.getSize());
+        }
+
+
+        System.out.println("========== sorted by size===========");
+
+        Arrays.sort(s, new SortBySize());
+
+        for (Sphere i : s) {
+            System.out.println("Size: " + i.getColor() +
+                    " color: " + i.getSize());
+        }
+
+
+        System.out.println("========== sorted by color ===========");
+
+        Arrays.sort(s, new SortByColor());
+        for (Sphere i : s) {
+            System.out.println("Color: " + i.getColor() +
+                    " size: " + i.getSize());
         }
     }
-
 }
+
+
+
 
