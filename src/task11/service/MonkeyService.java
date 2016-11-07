@@ -17,14 +17,14 @@ public class MonkeyService {
 
         Calculation monkey = new BananaMonkey();
 
-        int result = calculate(monkey, tree;
+        int result = calculate(monkey, tree);
 
-
+        System.out.println(monkey.getNumberOfFruits());
 
 
 
     }
-    public int calculate(Calculation monkey, Branch tree){
+    public static int calculate(Calculation monkey, Branch tree){
         return monkey.calculate(tree);
     }
     public static Branch createTree(String type) {

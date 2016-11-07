@@ -8,5 +8,7 @@ public class CocosMonkey  extends AbstactMonkeys {
 
     @Override
     protected boolean isCalculatable(Fruit fruit) {
+
         return TYPE.equals(fruit.getType().name());
+    }
 }

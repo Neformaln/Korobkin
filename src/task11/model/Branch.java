@@ -10,18 +10,22 @@ public class Branch {
     List<Fruit> fruits;
 
     public List<Branch> getBrances() {
+
         return brances;
     }
 
     public List<Fruit> getFruits() {
+
         return fruits;
     }
 
     public void setBrances(List<Branch> brances) {
+
         this.brances = brances;
     }
 
     public void setFruits(List<Fruit> fruits) {
+
         this.fruits = fruits;
     }
 }
