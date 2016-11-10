@@ -8,8 +8,8 @@ import java.util.LinkedList;
  * Created by Dibox on 06.11.2016.
  */
 public class TestCollection {
-    private static int n = 100_000;
-    private static int m = -111_111;
+    private static int n = 10000;
+    private static int m = 10000;
 
     public static void main(String[] args) {
         ArrayList<Integer> arrayList = new ArrayList<>();
