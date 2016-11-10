@@ -28,9 +28,9 @@ public class MoreDevice extends Device implements Metods {
 
     public static void main(String[] args) {
 
-        Device telephone = new MoreDevice("Samsung",1500,"Samphone");
+        Device telephone = new MoreDevice("Samsung",3500,"Samphone");
         String name = MoreDevice.class.getSimpleName();
-        Device pleer = new MoreDevice("Sven",30,"Audiosystem");
+        Device pleer = new MoreDevice("Sven",750,"Audiosystem");
         telephone.swichOn();
         telephone.swichOff();
         telephone.getCategory();

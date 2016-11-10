@@ -5,9 +5,9 @@ package task10;
  */
 public class Act {
     public void swichOn(){
-        System.out.println("Прибор Включен");
+        System.out.println("Включено");
     }
     public void swichOff(){
-        System.out.println("Прибор Выключен");
+        System.out.println("Выключено");
     }
 }
