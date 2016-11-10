@@ -3,9 +3,9 @@ package task10;
 /**
  * Created by Dibox on 10.11.2016.
  */
-public class MoreDevice extends Device implements Metods {
+public class Main extends Device implements Metods {
     public String name;
-    MoreDevice(String producer, int price, String name) {
+    Main(String producer, int price, String name) {
         super(producer, price);
         this.name = name;
     }
@@ -28,9 +28,9 @@ public class MoreDevice extends Device implements Metods {
 
     public static void main(String[] args) {
 
-        Device telephone = new MoreDevice("Samsung",1500,"Samphone");
-        String name = MoreDevice.class.getSimpleName();
-        Device pleer = new MoreDevice("Sven",30,"Audiosystem");
+        Device telephone = new Main("Samsung",3500,"Samphone");
+        String name = Main.class.getSimpleName();
+        Device pleer = new Main("Sven",750,"Audiosystem");
         telephone.swichOn();
         telephone.swichOff();
         telephone.getCategory();

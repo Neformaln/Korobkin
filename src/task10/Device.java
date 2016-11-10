@@ -3,7 +3,7 @@ package task10;
 /**
  * Created by Dibox on 10.11.2016.
  */
-public abstract class Device extends Act implements Metods {
+public abstract class Device extends OnOff implements Metods {
     String producer;
     int price;
 
